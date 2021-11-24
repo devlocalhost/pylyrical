@@ -31,7 +31,7 @@ It *probably* works on every platform, such as *nix-like platforms, and maybe wi
 If you find any issue, please copy the traceback (screenshot suggested instead), and open an issue. Make sure you include:
 
 1. Your python version (python3 -V)
-2. Your distro version and name (for example debian 11)
+2. Your distro version and name (for example debian 11) or your windows version if you're using windows
 3. The traceback
 
 # Note
