@@ -12,7 +12,7 @@ First, you will need to get an **access token** to use pylyrical by [creating a 
 
 Then you will need to install the needed modules, which are
 
-1. [rich](https://githb.com/willmcgugan/rich)
+1. [rich](https://github.com/willmcgugan/rich)
 2. [requests](https://pypi.org/projects/requests/)
 3. and [bs4](https://pypi.org/projects/beautifulsoup4/)
 
