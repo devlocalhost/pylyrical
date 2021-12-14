@@ -1,3 +1,7 @@
+# DOESN'T WORK
+Genius changed their website again, so I have to update the code. I already updated the code, but I'm going to release it in a few days
+AND AGAIN, this code **DOESN'T** WORK ANYMORE
+
 ![main menu of pylyrical](img1.png)
 
 Ever wanted to easily get lyrics on your terminal? (*No?*) Well now you can!
