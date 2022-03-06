@@ -28,7 +28,7 @@ It *probably* works on every platform, including linux, and maybe windows. Im no
 
 # Issues
 
-If you find any issue, please copy the traceback (screenshot suggested instead), and open an issue. Make sure you include:
+If you find any issue, please copy the traceback, and open an issue. Make sure you include:
 
 1. Your python version (python3 -V)
 2. Your distro version and name (for example debian 11) or your windows version if you're using windows
