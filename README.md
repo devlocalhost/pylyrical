@@ -1,7 +1,3 @@
-# DOESN'T WORK
-Genius changed their website again, so I have to update the code. I already updated the code, but I'm going to release it in a few days
-AND AGAIN, this code **DOESN'T** WORK ANYMORE
-
 ![main menu of pylyrical](img1.png)
 
 Ever wanted to easily get lyrics on your terminal? (*No?*) Well now you can!
@@ -12,9 +8,9 @@ With pylyrical, you can get lyrics for almost every song (*if genius website has
 
 # Setup
 
-First, you will need to get an **access token** to use pylyrical by [creating a client](https://genius.com/api-clients), clicking **Generate Access Token** and copying the token. After that, you will need to paste it on line 15 on the "pylyrical.py" file. (*you need to remove "ACCESS_TOKEN-1234569420360_AMOGUS" of course*)
+First, you will need to get an **access token** to use pylyrical by [creating a client](https://genius.com/api-clients), clicking **Generate Access Token** and copying the token. After that, you will need to paste it on line 15 on the "pylyrical.py" file. (*you need to replace "S3CR3T0K3N" of course*)
 
-Then you will need to install the needed modules, which are
+Then you will need to install:
 
 1. [rich](https://github.com/willmcgugan/rich)
 2. [requests](https://pypi.org/projects/requests/)
@@ -28,7 +24,7 @@ After that, you will need to git clone this module (git clone https://github.com
 
 # Compatibility
 
-It *probably* works on every platform, such as *nix-like platforms, and maybe windows. Im not really sure if it works on windows. *I hope it does lol*
+It *probably* works on every platform, including linux, and maybe windows. Im not really sure if it works on windows.
 
 # Issues
 
@@ -37,7 +33,3 @@ If you find any issue, please copy the traceback (screenshot suggested instead),
 1. Your python version (python3 -V)
 2. Your distro version and name (for example debian 11) or your windows version if you're using windows
 3. The traceback
-
-# Note
-
-Sometimes, pylyrical *might not* return the lyrics, but some random text. Thats why im using a *while True* block (line 44) to avoid this issue. If this happens, please make an issue, and post the results so i can fix it.
