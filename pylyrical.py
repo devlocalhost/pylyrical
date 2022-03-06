@@ -12,7 +12,7 @@ from os import system
 install()
 
 API_URL = 'https://api.genius.com/search/'
-TKN = 'ACCESS_TOKEN-1234569420360_AMOGUS' # get it on https://genius.com/api-clients by creating a client and clicking Generate Access Token
+TKN = 'S3CR3T0K3N' # get it on https://genius.com/api-clients by creating a client and clicking Generate Access Token
 # SRCH = 'killshot eminem' # Your search term
 CLEARCMD = None # must be a string. if your OS does not use clear or cls to clear the terminal
 # then replace None with the command which your OS uses to clear the screen
@@ -38,19 +38,15 @@ def clearscr(CLEARCMD=None):
         clearscr(CLEARCMD)
 
 def scrape(link):
-    while True:
-        lyrics = BeautifulSoup(get(link).text, 'html.parser').find('p').text # urls_list[int(link_num)]
+    lyricsform = []
         
-        if lyrics == 'Produced by' or lyrics == 'Release Date':
-            console.print('[redsty]Still scraping...[/redsty]')
-            sleep(0.3)
-            # pass
-        
-        else:
-            clearscr()
+    for lyricsdata in BeautifulSoup(get(link).text, 'html.parser').select('div[class*=Lyrics__Container]'):
+        dat = lyricsdata.get_text('\n')
+        lyricsform.append(f"{dat}\n")
 
-            console.print(lyrics, style='light')
-            break
+    clearscr()
+
+    console.print(str(''.join(lyricsform)).replace('[', '\n['), style='light')
 
 def search(query_term):
     data = {"q": query_term}
